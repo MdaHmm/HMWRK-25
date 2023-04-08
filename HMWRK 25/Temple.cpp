@@ -1,5 +1,7 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
+
+// РљРѕРґРёСЂРѕРІРєР° UTF-8
 
 bool tr_fal(std::string text) {
 	for (int i{}; i < text.length(); i++)
@@ -37,31 +39,31 @@ int main() {
 	std::string str = "Hasta siempre comandante!";
 	char sym = 'a';
 	std::string str_a;
-	std::cout << "Задача 1.\nВ " << str << " ищем все символы 'a' и выводим строку: ";
+	std::cout << "Р—Р°РґР°С‡Р° 1.\nР’ " << str << " РёС‰РµРј РІСЃРµ СЃРёРјРІРѕР»С‹ 'a' Рё РІС‹РІРѕРґРёРј СЃС‚СЂРѕРєСѓ: ";
 
 	for (int i{}; i < str.length(); i++) 
 		if (str[i] == sym)
 			str_a += sym;
 	std::cout << str_a << std::endl;
 
-	std::cout << "Задача 2.\nВведите слово: ";
+	std::cout << "Р—Р°РґР°С‡Р° 2.\nР’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ: ";
 	std::string word;
 	std::cin >> word;
 	std::cout << tr_fal(word) << std::endl;
 
-	std::cout << "\nЗадача 3.\n";
-	std::string txt = "Привет! Как дела? Какие новости? Я,вот, домашку делаю по плюсам.";
-	std::cout << "Колличество знаков препинания и пробелов в тексте: " << txt << " = " << signs(txt) << std::endl;
+	std::cout << "\nР—Р°РґР°С‡Р° 3.\n";
+	std::string txt = "РџСЂРёРІРµС‚! РљР°Рє РґРµР»Р°? РљР°РєРёРµ РЅРѕРІРѕСЃС‚Рё? РЇ,РІРѕС‚, РґРѕРјР°С€РєСѓ РґРµР»Р°СЋ РїРѕ РїР»СЋСЃР°Рј.";
+	std::cout << "РљРѕР»Р»РёС‡РµСЃС‚РІРѕ Р·РЅР°РєРѕРІ РїСЂРµРїРёРЅР°РЅРёСЏ Рё РїСЂРѕР±РµР»РѕРІ РІ С‚РµРєСЃС‚Рµ: " << txt << " = " << signs(txt) << std::endl;
 
 
-	// Не до конца разобрался с std::getline из-за чего не смог реализовать ввод символа от пользователя
-	std::cout << "\nЗадача 4.\nИзначальная строка: ";
-	std::string text = "Привет! Как твои дела?";
+	// РќРµ РґРѕ РєРѕРЅС†Р° СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ std::getline РёР·-Р·Р° С‡РµРіРѕ РЅРµ СЃРјРѕРі СЂРµР°Р»РёР·РѕРІР°С‚СЊ РІРІРѕРґ СЃРёРјРІРѕР»Р° РѕС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+	std::cout << "\nР—Р°РґР°С‡Р° 4.\nРР·РЅР°С‡Р°Р»СЊРЅР°СЏ СЃС‚СЂРѕРєР°: ";
+	std::string text = "РџСЂРёРІРµС‚! РљР°Рє С‚РІРѕРё РґРµР»Р°?";
 	std::cout << text << std::endl;
-	m = 'и';
-	std::cout << "Подстрока: " << sub_str(text, m) << std::endl;
-	m = 'у';
-	std::cout << "Подстрока: " << sub_str(text, m) << std::endl;
+	m = 'Рё';
+	std::cout << "РџРѕРґСЃС‚СЂРѕРєР°: " << sub_str(text, m) << std::endl;
+	m = 'Сѓ';
+	std::cout << "РџРѕРґСЃС‚СЂРѕРєР°: " << sub_str(text, m) << std::endl;
 
 	return 0;
 }
